@@ -1,9 +1,14 @@
 body {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #0B273E;
-
 }
 
 #myH1 {
@@ -36,6 +41,8 @@ body {
 }
 
 #container {
+    width: 30%;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,11 +51,11 @@ body {
     border: 5px solid hsl(207, 70%, 20%);
     border-radius: 50px;
     box-shadow: 20px 20px 200px #3d4b57;
-
+    
 }
 
 #display {
-    font-size: 5rem;
+    font-size: 5em;
     font-family: monospace;
     font-weight: bold;
     margin-bottom: 25px;
@@ -87,4 +94,13 @@ body {
 }
 #resetBtn:hover {
     background-color: rgb(3, 3, 161);
+}
+
+@media screen and (max-width: 1021px) {
+    #display {
+        font-size: 3em;
+    }
+    #controls {
+        text-align: center;
+    }
 }
