@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B273E;
+
+}
+
+#myH1 {
+    color: whitesmoke;
+    animation-delay: var(--delay);
+    font-family: monospace;
+    font-size: 4em;
+    animation-name: upAndDown;
+    animation-duration: 2s;
+    display: inline-block;
+    animation-iteration-count: infinite;
+}
+
+#myH1 span {
+    animation-name: upAndDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    color: rgb(247, 238, 238);
+    
+}
+
+@keyframes upAndDown {
+    0%,100% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform:translateY(-10px);
+    }
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #DDE3E8;
+    border: 5px solid hsl(207, 70%, 20%);
+    border-radius: 50px;
+    box-shadow: 20px 20px 200px #3d4b57;
+
+}
+
+#display {
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #0B273E;
+}
+
+#controls button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #DDE3E8;
+    transition: background-color 0.5s ease;
+}
+
+#startBtn {
+    background-color: hsl(120, 17%, 16%);
+}
+#startBtn:hover {
+    background-color: rgb(1, 99, 1);
+}
+
+#stopBtn {
+    background-color: hsl(0, 100%, 16%);
+}
+#stopBtn:hover {
+    background-color: rgb(199, 5, 5);
+}
+
+#resetBtn {
+    background-color: hsl(240, 100%, 16%);
+}
+#resetBtn:hover {
+    background-color: rgb(3, 3, 161);
+}
